@@ -1,0 +1,98 @@
+Day 2:
+
+question 1:
+browser JS								Node JS
+1. browser JS is used as frontend application				node js is used as Bacend application
+2.browser js runs on any engine like spider monkey, javascript core,v8	node js only runs on v8 engine only
+3.browser js has limited access						node js has full system access
+4. browser js are not headless						node js is headless i.e.,without any GUI
+5.moduling is not mandatory 						mandatory to keep everything in a module
+
+question 2:
+watch & summary 5 points - https://www.youtube.com/watch?v=SmE4OwHztCc&ab_channel=JSConf
+
+How does the browser render a webpage?
+
+creation of webpage using html is necessary.
+the webpage is decorated by using CSS.
+now after creation of webpage the HTML needs to be rendered by the browser. 
+here we needed to undeerstand DOM ,CSSOM, render tree
+
+DOCUMENT OBJECT MODEL DOM:
+DOM is a high level web API provided by the web browser to efficiently render a webpage and expose it publically for the developer to dyamically manipulate DOM elements for various purposes
+when the borwser reads the HTML code, it creates a NODE object for every html code object
+after creation of node, this node will be representing a tree like structure called DOMTREE.
+This tree consisit of various elements like head, body, div, script, and p
+
+CASCADING STYLE SHEET CSS:
+1.CSS is basically used to represent the webpage colourful
+2.CSS is uesd to assign the font size , colour, bgcolour, etc.., to each and every html code element.
+
+RENDER TREE:
+render tree is also tree like structure by combining both DOM and CSSOM tree together.
+browser uses render tree to calculate the layout of each visible element and paint the on the screen.
+
+
+question 4:
+1.typeof(1)-number
+2.typeof(1.1)- number
+3.typeof('1.1') - string
+4.typeof(true)- boolean
+5.typeof(null) - object
+6.typeof(undefined)- undefined
+7.typeof([])- /box/main.js:18
+  console.log(typeof([]);
+                       ^
+
+SyntaxError: missing ) after argument list
+    at createScript (vm.js:74:10)
+    at Object.runInThisContext (vm.js:116:10)
+    at Module._compile (module.js:588:28)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:201:16)
+    at bootstrap_node.js:626:3
+
+
+Runtime Error (NZEC)
+
+8.typeof({})-/box/main.js:18
+  console.log(typeof({});
+                       ^
+
+SyntaxError: missing ) after argument list
+    at createScript (vm.js:74:10)
+    at Object.runInThisContext (vm.js:116:10)
+    at Module._compile (module.js:588:28)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:201:16)
+    at bootstrap_node.js:626:3
+
+
+Runtime Error (NZEC)
+
+9. typeof(NaN)-/box/main.js:18
+console.log(typeof(NaN);
+                        ^
+
+SyntaxError: missing ) after argument list
+    at createScript (vm.js:74:10)
+    at Object.runInThisContext (vm.js:116:10)
+    at Module._compile (module.js:588:28)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:201:16)
+    at bootstrap_node.js:626:3
+
+
+Runtime Error (NZEC)
